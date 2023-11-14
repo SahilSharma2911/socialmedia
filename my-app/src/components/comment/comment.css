@@ -1,0 +1,64 @@
+
+.inputBar{
+   margin-top: 20px;
+   border-radius: 10px;
+   background-color: rgb(219, 219, 219);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+.inputBarText{
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: rgb(219, 219, 219);
+    width: 85%;
+ }
+ .inputBarText:focus {
+    outline: none;
+}
+.inputBarIcon{
+margin-right: 10px;
+color: rgb(52, 53, 54);
+
+}
+.details{
+    margin-top: 5px;
+    max-height: 200px;
+    overflow: auto;
+
+}
+.details::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 8px; 
+}
+.userDetails{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px ;
+    
+}
+.userDetailItem{
+    display: flex;
+    align-items: center;
+    
+    font-size: 15px;
+}
+.userDetailItemText{
+    margin-left: 5px;
+}
+.userDetailItemTextComment{
+    margin-left: 5px;
+    color: rgb(79, 79, 79);
+}
+.commenTime{
+    font-size: 10px;
+}
+.postProfileImg2{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    object-fit: cover;
+}

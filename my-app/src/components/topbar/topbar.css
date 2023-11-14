@@ -1,0 +1,224 @@
+.topbarContainer {
+  height: 50px;
+  width: 100%;
+  background-color: #1877f2;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.topbarLeft {
+  flex: 3;
+}
+
+.logo {
+  font-size: 24px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.topbarCenter {
+  flex: 5;
+}
+
+.searchbar {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.searchInput {
+  border: none;
+  width: 70%;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+.userPopup {
+  position: absolute;
+  top: 99%;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  margin-right: 100px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: 1;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.userPopupItem {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.userPopupItem:hover {
+  background-color: #f1f1f1;
+}
+
+.postProfileImg {
+  width: 32px; /* Adjust the image size as needed */
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.postUsername {
+  font-weight: 500;
+  color: #333; /* Adjust the text color as needed */
+}
+
+/* Add a subtle transition effect for the userPopup */
+.userPopupItem a {
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.userPopupItem a:hover {
+  color: #007bff; /* Change the text color on hover */
+}
+
+.searchInput:focus + .userPopup {
+  display: block;
+}
+
+.topbarRight {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  margin-right: 20px;
+}
+
+.topbarLink {
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.topbarIcons {
+  display: flex;
+}
+
+.topbarIconItem {
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.topbarIconBadge {
+  width: 13px;
+  height: 13px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.topbarImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  margin-right: 30px;
+  margin-left: 20px;
+}
+
+.menuBar {
+  color: white;
+  display: none;
+  /* margin-right: 10px; */
+  margin-left: 15px;
+}
+
+.searchSmall {
+  color: white;
+}
+.seacrchRight {
+  display: none;
+}
+
+.RightsearchIcon {
+  margin-right: 20px;
+  font-size: 23px;
+  display: none;
+}
+.topbarEnd{
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .topbarCenter {
+    flex: 2;
+    margin-right: 40px;
+  }
+  
+  .topbarLeft {
+    flex: 1.5;
+  }
+  .topbarRight {
+    display: none;
+  }
+  .topbarEnd{
+    margin-right: 30px;
+    display: inline;
+    color: white;
+  }
+  .menuBar{
+    color: white;
+    height: 20px;
+    width: 20px;
+  }
+}
+/* @media (max-width: 450px){
+  .topbarEnd{
+    margin-right: 10px;
+    display: inline;
+    color: white;
+  }
+  .topbarLeft {
+    flex: 1.5;
+    margin-left:-10px ;
+  }
+  .topbarCenter {
+    flex: 2;
+    margin-right: 25px;
+  }
+  .logo {
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+} */
+

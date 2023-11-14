@@ -1,0 +1,61 @@
+/* SideMenu.css */
+.sideMenu {
+    position: fixed;
+    top: 0;
+    right: -100px; 
+    width: 100px; 
+    height: 100%;
+    background-color: #3686ee; 
+    transition: right 0.3s;
+    z-index: 1;
+
+  }
+  
+  .sideMenu.show {
+    right: 0; 
+  }
+  
+  .sideMenuContent {
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 40vh; /* Ensure the container takes up the full height */
+}
+  .topbarImg {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-left: 20px;
+  }
+  .topbarIcons {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .topbarIconItem {
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .topbarIconBadge {
+    width: 13px;
+    height: 13px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+  }
+  
+  
